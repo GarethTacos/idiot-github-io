@@ -1,0 +1,45 @@
+<html><head>
+<title>Youareanidiot.sb3</title>
+<link rel="shortcut icon" href="file:///C:/Users/Micro/Downloads/funnicon.svg.htm">
+    <style>
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+  
+<body>
+    <script>
+        var images = new Array()
+        images = [
+"file:///C:/Users/Micro/Downloads/costume1.svg",
+"file:///C:/Users/Micro/Downloads/costume2.svg",
+"file:///C:/Users/Micro/Downloads/costume3.svg",
+"file:///C:/Users/Micro/Downloads/costume4.svg",
+"file:///C:/Users/Micro/Downloads/costume5.svg",
+"file:///C:/Users/Micro/Downloads/costume6.svg",
+"file:///C:/Users/Micro/Downloads/costume7.svg",
+"file:///C:/Users/Micro/Downloads/costume8.svg",
+"file:///C:/Users/Micro/Downloads/costume9.svg"
+        ];
+  
+        setInterval("Animate()", 400);
+        var x = 0;
+  
+        function Animate() {
+            document.getElementById("img").src = images[x]
+            x++;
+            if (images.length == x) {
+                x = 0;
+            }
+        }
+    </script>
+  
+    <div class="center">
+        <img id="img" src="file:///C:/Users/Micro/Downloads/costume1.svg">
+    </div>
+
+  
+
+</body></html>
